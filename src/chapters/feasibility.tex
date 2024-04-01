@@ -1,0 +1,269 @@
+\chapter{Factibilidad}
+
+\section{Factibilidad Técnica}
+\subsection{Conocimientos de los Usuarios}
+¿Qué grado de conocimiento tienen los usuarios con respecto al contexto del problema? ¿Cómo se capacitará a los usuarios? ¿Tendrán disposición al cambio?
+
+\subsection{Disponibilidad Profesional}
+¿Se necesita del trabajo de un profesional del desarrollo de software u otra área específica? ¿Qué equipamiento se requiere y con qué equipamiento se cuenta? ¿Qué software se requiere y con qué tipo de acceso a él se cuenta?
+
+% Equipamiento
+\begin{center}
+	\begin{tabular}{ | l | p{10cm} |}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Equipamiento}} \\
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Nombre}} & \multicolumn{1}{|c|}{\textbf{Acceso}} \\
+		\hline
+		{\textbf{Windows PC}} & Equipo personal \\ \hline
+		
+		{\textbf{MacBook Pro M1}} & Equipo personal \\ \hline
+	\end{tabular}
+  \captionof{table}{Tabla de equipos físicos}\label{table:physical-equipment}
+\end{center}
+
+% Software
+\begin{center}
+	\begin{tabular}{ | l | p{10cm} |}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Software}} \\
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Nombre}} & \multicolumn{1}{|c|}{\textbf{Acceso}} \\
+		\hline
+		
+		{\textbf{Notepad++}} & Software libre \\ \hline
+		
+		{\textbf{MongoDB Compass}} & Software libre \\ \hline
+		
+		{\textbf{RedisInsight}} & Software libre \\ \hline
+		
+		{\textbf{Git/Git Bash}} & Software libre \\ \hline
+		
+		{\textbf{Ubuntu LTS}} & Software libre \\ \hline
+		
+		{\textbf{RubyMine}} & Licencia de estudiante \\ \hline
+		
+		{\textbf{Termius}} & Licencia de estudiante \\ \hline
+		
+		{\textbf{Microsoft  Excel}} & Licencia de estudiante \\ \hline
+	\end{tabular}
+  \\
+  \captionof{table}{Tabla de software}\label{table:software}
+\end{center}
+
+\subsection{Despliegue y Servidor}
+Características del servidor de despliegue, cómo y por qué se eligió, etc.
+
+% Servidor
+\begin{center}
+	\begin{tabular}{ | l | p{10cm} |}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{VPS}} \\
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Característica}} & \multicolumn{1}{|c|}{\textbf{Detalle}} \\
+		\hline
+		
+		{\textbf{Proveedor}} & DigitalOcean \\ \hline
+		
+		{\textbf{Región}} & Nueva York \\ \hline
+		
+		{\textbf{Sistema Operativo}} & Ubuntu 22.04 (LTS) x64 \\ \hline
+		
+		{\textbf{Tipo de CPU}} & Intel Regular \\ \hline
+		
+		{\textbf{Número de vCPUs}} & 1 CPU\\ \hline
+		
+		{\textbf{Memoria}} & 2 GB \\ \hline
+		
+		{\textbf{Almacenamiento (SSD)}} & 50 GB \\ \hline
+		
+		{\textbf{Transferencia}} & 2 TB \\ \hline
+	\end{tabular}
+  
+  \captionof{table}{Tabla de VPS}\label{table:vps}
+\end{center}
+
+Concluir si el proyecto es factible técnicamente explicando por qué lo es.
+
+\section{Factibilidad Operativa}
+¿Los usuarios tienen disposición al cambio? ¿Los usuarios verán una mejora en su experiencia? ¿Por qué?
+
+\section{Factibilidad Económica}
+Todo lo que tiene que ver con los flujos de caja, cálculo del VAN proyectado a cierta cantidad de años, etc.
+
+\subsection{Tablas de Costos}
+\label{feasibility:costs}
+Tablas de costos relacionados con el proyecto. A continuación hay algunas tablas de ejemplo:
+
+% Costos de Producción
+\begin{center}
+	\begin{tabular}{ | l | p{5cm} | p{5cm}|}
+		\hline
+		\multicolumn{3}{|c|}{\textbf{Software}} \\
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Nombre}} & \multicolumn{1}{|c|}{\textbf{Acceso}} & \multicolumn{1}{|c|}{\textbf{Precio (anual)}} \\
+		\hline
+		{\textbf{Notepad++}} & Software libre & \multicolumn{1}{|r|}{\$0} \\ \hline
+
+		{\textbf{MongoDB Compass}} & Software libre & \multicolumn{1}{|r|}{\$0} \\ \hline
+		
+		{\textbf{RedisInsight}} & Software libre & \multicolumn{1}{|r|}{\$0} \\ \hline
+		
+		{\textbf{Git/Git Bash}} & Software libre & \multicolumn{1}{|r|}{\$0} \\ \hline
+		
+		{\textbf{Ubuntu LTS}} & Software libre & \multicolumn{1}{|r|}{\$0} \\ \hline
+		
+		{\textbf{RubyMine}} & Licencia de estudiante & \multicolumn{1}{|r|}{\$0} \\ \hline
+		
+		{\textbf{Termius}} & Licencia de estudiante & \multicolumn{1}{|r|}{\$0} \\ \hline
+		
+		{\textbf{Microsoft Excel}} & Licencia de estudiante & \multicolumn{1}{|r|}{\$0} \\ \hline
+	\end{tabular}
+
+  \captionof{table}{Tabla de costos de software}\label{table:costs:software}
+\end{center}
+
+% Costos de Producción
+\begin{center}
+	\begin{tabular}{ | l | p{5cm} | p{5cm}|}
+		\hline
+		\multicolumn{3}{|c|}{\textbf{Costos de Producción}} \\
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Nombre}} & \multicolumn{1}{|c|}{\textbf{Proveedor}} & \multicolumn{1}{|c|}{\textbf{Precio (anual)}} \\
+		\hline
+		{\textbf{VPS}} & DigitalOcean & \multicolumn{1}{|r|}{\$125.000} \\ \hline
+		
+		{\textbf{Mailer}} & Postmark & \multicolumn{1}{|r|}{\$156.000} \\ \hline
+		
+		{\textbf{Dominio}} & Namecheap & \multicolumn{1}{|r|}{\$22.600} \\ \hline
+    
+		{\textbf{Git/Git Bash}} & Software libre & \multicolumn{1}{|r|}{\$0} \\ \hline
+		
+		{\textbf{Ubuntu LTS}} & Software libre & \multicolumn{1}{|r|}{\$0} \\ \hline
+    
+    	{\textbf{Crowdin}} & Licencia Open Source & \multicolumn{1}{|r|}{\$0} \\ \hline
+    
+    	{\textbf{Sentry}} & Licencia de estudiante & \multicolumn{1}{|r|}{\$0} \\ \hline
+
+		{\textbf{RubyMine}} & Licencia de estudiante & \multicolumn{1}{|r|}{\$0} \\ \hline
+	
+		{\textbf{Termius}} & Licencia de estudiante & \multicolumn{1}{|r|}{\$0} \\ \hline
+		
+      	{\textbf{Microsoft Excel}} & Licencia de estudiante & \multicolumn{1}{|r|}{\$0} \\ \hline
+	\end{tabular}
+
+  \captionof{table}{Tabla de costos de producción}\label{table:costs:production}
+\end{center}
+
+\subsection{Flujo de Caja}
+...
+
+\subsubsection{Contexto e Indicadores Económicos}
+...
+
+% Tasa Anual
+\begin{center}
+	\begin{tabular}{ | p{7cm} | p{5cm}|}
+		\hline
+		{\textbf{Inflación Promedio Anual}} & 4.3\%  \\ \hline
+		{\textbf{Tasa Prima de Riesgo}} & 21\% \\ \hline
+	\end{tabular}
+
+  \captionof{table}{Tabla de indicadores económicos}\label{table:indicators}
+\end{center}
+
+\[
+\mathlarger{
+  TMAR = 0.04+0.21+(0.04\cdot0.21) = 0.2584 \approx 26\%
+}
+\]
+
+\subsubsection{Puesta en Marcha}
+En esta sección se puede buscar una referencia del sueldo mensual promedio de un desarrollador de software, analista programador o similar. Luego, a partir de esa referencia, calcular el valor por hora y ajustarlo según las horas de trabajo efectivo.
+
+
+Ejemplo: (\$900.000 mensual; \$5.538 por hora), ajustado a las horas de trabajo efectivas empleadas en el proyecto, las cuales fueron 4 horas de trabajo efectivo durante 6 días de la semana por mes (4 semanas) de desarrollo.
+
+\[
+\mathlarger{
+	Desarrollo = \$5.538 \cdot \left(4 \textit{ horas}\cdot6 \textit{ días}\cdot4 \textit{ semanas}\right) = \$531.648
+}
+\]
+
+% Costos Mensuales
+\begin{center}
+	\begin{tabular}{ | p{5cm} | p{5cm} | }
+		\hline
+    \multicolumn{2}{|c|}{\textbf{Costos}} \\
+		\hline
+		{Desarrollo} & \multicolumn{1}{|r|}{\$531.648} \\ \hline
+		
+		{Internet} & \multicolumn{1}{|r|}{\$10.000} \\ \hline
+		
+		{Electricidad} & \multicolumn{1}{|r|}{\$20.600} \\ \hline
+    
+    {\textbf{Total}} & \multicolumn{1}{|r|}{\textbf{\$561.648}} \\ \hline
+	\end{tabular}
+
+  \captionof{table}{Tabla de costos}\label{table:costs}
+\end{center}
+
+Una vez calculado el total de gastos para la puesta en marcha, es posible extrapolar a 4 meses y calcular la inversión inicial del proyecto a través de la siguiente fórmula.
+
+\[
+\mathlarger{
+	{I_0} = \$561.648 \cdot 4\textit{ meses}= \$2.246.592
+}
+\]
+
+\subsubsection{Cálculo del Valor Actual Neto}
+Por ejemplo, al tratarse ahora del mantenimiento del software, las horas disminuyen, por lo que el costo también decrece:
+
+\[
+\mathlarger{
+	Mantenimiento = \$5.538 \cdot \left(1 \textit{ hora}\cdot5 \textit{ días}\cdot4 \textit{ semanas}\right) = \$110.760
+}
+\]
+
+\[
+\frac{Desarrollo}{Mantenimiento} = \frac{\$531.648}{\$110.760} = 4.8
+\]
+
+\[
+Internet = \frac{\$10.000}{4.8} = \$2.083
+\]
+
+\[
+Electricidad = \frac{\$20.600}{4.8} = \$5.208
+\]
+
+% VAN Mantenimiento
+\begin{center}
+	\begin{tabular}{ | l | l | l | l | l | l | l |}
+		\hline
+		& \multicolumn{1}{|c|}{\textbf{0}} & \multicolumn{1}{|c|}{\textbf{1}} & \multicolumn{1}{|c|}{\textbf{2}} & \multicolumn{1}{|c|}{\textbf{3}} & \multicolumn{1}{|c|}{\textbf{4}} & \multicolumn{1}{|c|}{\textbf{5}} \\
+		\hline
+		{\textbf{Mantenimiento}} &  & \multicolumn{1}{|r|}{\$1.329.120} & \multicolumn{1}{|r|}{\$1.329.120} & \multicolumn{1}{|r|}{\$1.329.120} & \multicolumn{1}{|r|}{\$1.329.120} & \multicolumn{1}{|r|}{\$1.329.120} \\ \hline
+		
+		{\textbf{Internet}} &  & \multicolumn{1}{|r|}{\$24.996} & \multicolumn{1}{|r|}{\$24.996} & \multicolumn{1}{|r|}{\$24.996} & \multicolumn{1}{|r|}{\$24.996} & \multicolumn{1}{|r|}{\$24.996} \\ \hline
+		
+		{\textbf{Electricidad}} &  & \multicolumn{1}{|r|}{\$62.496} & \multicolumn{1}{|r|}{\$62.496} & \multicolumn{1}{|r|}{\$62.496} & \multicolumn{1}{|r|}{\$62.496} & \multicolumn{1}{|r|}{\$62.496} \\ \hline
+		
+		{\textbf{Hosting}} &  & \multicolumn{1}{|r|}{-\$126.312} & \multicolumn{1}{|r|}{-\$126.312} & \multicolumn{1}{|r|}{-\$126.312} & \multicolumn{1}{|r|}{-\$126.312} & \multicolumn{1}{|r|}{-\$126.312} \\ \hline
+		
+		{\textbf{Flujo}} &  & \multicolumn{1}{|r|}{\$1.290.300} & \multicolumn{1}{|r|}{\$1.290.300} & \multicolumn{1}{|r|}{\$1.290.300} & \multicolumn{1}{|r|}{\$1.290.300} & \multicolumn{1}{|r|}{\$1.290.300} \\ \hline
+		{\textbf{Inv. Inicial}} & \multicolumn{1}{|r|}{\$2.246.592} & & & & & \\ \hline
+		\textbf{Flujo Total} & \multicolumn{1}{|r|}{\$6.451.500} & & & & & \\ \hline
+	\end{tabular}
+
+  \captionof{table}{Tabla de cálculo de VAN}\label{table:van}
+\end{center}
+
+\[
+\mathlarger{
+	{VAN} = I_0 + \sum\limits_{t=i}^{n}\frac{C_t}{\left(1+r^t\right)} = \$5.646.624
+}
+\]
+
+\section{Conclusión de Factibilidad}
+Concluir sobre cada tipo de factibilidad y entregar una conclusión general del capítulo.

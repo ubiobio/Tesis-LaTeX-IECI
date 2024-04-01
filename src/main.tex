@@ -1,0 +1,138 @@
+\documentclass[12pt]{report}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage[spanish]{cleveref}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, es-nodecimaldot, es-tabla]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyphenat}
+\usepackage{listings}
+\usepackage{minted}
+\usepackage{multirow}
+\usepackage{relsize}
+\usepackage{xcolor}
+
+\graphicspath{{img/}}
+
+\newgeometry{
+	right=3cm,
+	left=3cm,
+	top=2.5cm,
+	bottom=2.5cm
+}
+
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+\newenvironment{longlisting}{\captionsetup{type=listing}}{}
+
+% Profundidad de secciones
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+% Referencias automáticas (Español)
+\def\sectionautorefname{sección}
+\def\subsectionautorefname{subsección}
+\def\subsubsectionautorefname{subsección}
+\def\figureautorefname{figura}
+\def\tableautorefname{tabla}
+\crefname{table}{tabla}{tablas}
+\Crefname{table}{Tabla}{Tablas}
+
+% Índice (Español)
+\addto\captionsspanish{
+	\renewcommand{\contentsname}%
+	{Índice}%
+}
+
+\begin{titlepage}
+
+\title{
+	\begin{figure}
+		\centering
+			\includegraphics[width=2cm, height=3cm]{img/logo.png}\\
+			{Universidad del Bío-Bío\\
+			Facultad de Ciencias Empresariales\\
+			Depto. de Sistemas de Información}
+	\end{figure}
+	{Título de la Tesis}\\
+	{\large Proyecto de título para optar al título de Ingeniero de Ejecución en Computación e Informática}
+}
+\author{\textbf{Alumno} \\ Nombre Apellido \\\\
+        \textbf{Profesor Guía} \\ Nombre Apellido \\
+}
+\date{Lunes 18 de diciembre, 2023}
+
+\end{titlepage}
+
+\begin{document}
+
+% Título del documento
+\maketitle
+
+% Tabla de Contenidos (Índice)
+\tableofcontents
+\newpage
+
+% Índice de figuras
+\listoffigures
+\newpage
+
+% Índice de tablas
+\listoftables
+\newpage
+
+\chapter*{Dedicatoria}
+\addcontentsline{toc}{section}{Dedicatoria}
+\input{chapters/dedication.tex}
+
+\chapter*{Agradecimientos}
+\addcontentsline{toc}{section}{Agradecimientos}
+\input{chapters/acknowledgements.tex}
+
+\chapter*{Resumen}
+\addcontentsline{toc}{section}{Resumen}
+\input{chapters/summary.tex}
+
+\chapter*{Introducción}
+\addcontentsline{toc}{section}{Introducción}
+\input{chapters/introduction.tex}
+
+% Estudio del Problema
+\include{chapters/problem.tex}
+
+% Proyecto
+\include{chapters/project.tex}
+
+% Factibilidad
+\include{chapters/feasibility.tex}
+
+% Requerimientos del Software
+\include{chapters/requirements.tex}
+
+% Análisis Funcional
+\include{chapters/analysis.tex}
+
+% Training
+\include{chapters/training.tex}
+
+% Conclusión
+\include{chapters/conclusion.tex}
+
+% Anexos
+\include{chapters/appendix.tex}
+
+% Bibliografía
+\bibliographystyle{ieeetr}
+
+\bibliography{main}
+
+\end{document}

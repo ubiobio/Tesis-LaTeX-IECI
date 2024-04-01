@@ -1,0 +1,145 @@
+\chapter{Proyecto}
+
+\section{Objetivo General del Proyecto}
+Objetivo general del proyecto
+
+\section{Objetivos Específicos del Proyecto}
+\begin{enumerate}
+	\item Objetivo específico
+	\item Objetivo específico
+	\item Objetivo específico
+\end{enumerate}
+
+\section{Metodología de Desarrollo}
+Para poder definir la metodología de desarrollo a utilizar, primero se debe tener en cuenta la \autoref{table:risks}, que representa los riesgos asociados.
+
+\begin{center}
+	\begin{tabular}{|lll|l|l|ll|}
+		\hline
+		\multicolumn{7}{|c|}{\multirow{7}{*}\textbf{\textbf{Tabla de Riesgos}}} \\
+		\hline
+		\multicolumn{3}{|l|}{\multirow{2}{*}{\textbf{Experiencia en el Problema}}} &
+		Alta &
+		X &
+		\multicolumn{2}{l|}{\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Se tienen años de experiencia con la \\comunidad de RVA y su sistema interno.\end{tabular}}} \\ \cline{4-5}
+		\multicolumn{3}{|l|}{} &
+		Baja &
+		&
+		\multicolumn{2}{l|}{} \\ \hline
+		
+		\multicolumn{3}{|l|}{\multirow{2}{*}{\textbf{Tamaño del Problema}}} &
+		Grande &
+		X &
+		\multicolumn{2}{l|}{\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}La cantidad de funcionalidades a im-\\plementar es muy alta.\end{tabular}}} \\ \cline{4-5}
+		\multicolumn{3}{|l|}{} &
+		Pequeño &
+		&
+		\multicolumn{2}{l|}{} \\ \hline
+	
+		\multicolumn{3}{|l|}{\multirow{2}{*}{\textbf{Complejidad del Problema}}} &
+		Complejo &
+		X &
+		\multicolumn{2}{l|}{\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}El sistema de puntos de RVA es difícil\\de comprender y manejar completamente.\end{tabular}}} \\ \cline{4-5}
+		\multicolumn{3}{|l|}{} &
+		Simple &
+		&
+		\multicolumn{2}{l|}{} \\ \hline
+		
+		\multicolumn{3}{|l|}{\multirow{2}{*}{\textbf{Tamaño del Software}}} &
+		Grande &
+		X &
+		\multicolumn{2}{l|}{\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}El software a construir require muchas\\funcionalidades.\end{tabular}}} \\ \cline{4-5}
+		\multicolumn{3}{|l|}{} &
+		Pequeño &
+		&
+		\multicolumn{2}{l|}{} \\ \hline
+		
+		\multicolumn{3}{|l|}{\multirow{2}{*}{\textbf{Complejidad Software}}} &
+		Complejo &
+		X &
+		\multicolumn{2}{l|}{\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}El software debe implementar cálculos\\complejos (ratios, promedios, etc.).\end{tabular}}} \\ \cline{4-5}
+		\multicolumn{3}{|l|}{} &
+		Simple &
+		&
+		\multicolumn{2}{l|}{} \\ \hline
+		
+		\multicolumn{3}{|l|}{\multirow{2}{*}{\textbf{Experiencia Software}}} &
+		Alta&
+		X &
+		\multicolumn{2}{l|}{\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Se tiene una alta experiencia desarrollando\\software para RVA y su sistema de puntos.\end{tabular}}} \\ \cline{4-5}
+		\multicolumn{3}{|l|}{} &
+		Baja &
+		&
+		\multicolumn{2}{l|}{} \\ \hline
+		
+		\multicolumn{3}{|l|}{\multirow{2}{*}{\textbf{Modularidad Funcional}}} &
+		Existe &
+		X &
+		\multicolumn{2}{l|}{\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Las funcionalidades  pueden implementarse\\por separado y luego integrarse.\end{tabular}}} \\ \cline{4-5}
+		\multicolumn{3}{|l|}{} &
+		No existe&
+		&
+		\multicolumn{2}{l|}{} \\ \hline
+	\end{tabular}%
+  \\
+  \captionof{table}{Tabla de Riesgos}\label{table:risks}
+\end{center}
+
+Aquí es recomendable escribir la interpretación de la tabla anterior y concluir por qué se eligió utilizar una determinada metodología.
+
+\section{Técnicas y Notaciones}
+\begin{itemize}
+	\item Diagrama de Casos de Usos.
+	\item BPMN para modelar el proceso de negocio actual.
+	\item Carta Gantt para la planificación inicial del proyecto.
+	\item Patrón de diseño MVC (Modelo, Vista, Controlador).
+\end{itemize}
+
+\section{Estándares de Documentación}
+\begin{itemize}
+	\item Adaptación Basada en IEEE Software Test Documentation Std 829-1998.
+	\item Adaptación Basada en IEEE Software Requirements Specifications Std 830-1998.
+\end{itemize}
+
+\section{Software, Frameworks y  Lenguajes Utilizados}
+\label{project:software}
+A continuación se lista el software, frameworks y lenguajes de programación, marcado y estilos utilizados para la realización de este proyecto.
+
+Para efectos del siguiente listado, los nombres de las herramientas, frameworks y lenguajes se han redactado en negrita, seguidos de paréntesis en itálica que contienen el número de la versión asociada a cada ítem.
+
+\begin{itemize}
+	\item[] \textbf{Lenguajes}
+	\begin{itemize}
+		\item \textbf{Ruby} \textit{(3.2.2)}: Lenguaje de programación de alto nivel.
+		\item \textbf{HAML} \textit{(6.2.3)}: Lenguaje de marcado para la abstracción de HTML.
+		\item \textbf{Sass} \textit{(6.0)}: Lenguaje de extensión para CSS.
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item[] \textbf{Software}
+	\begin{itemize}
+		\item \textbf{MongoDB} \textit{(7.0.3)}: Base de datos orientada a documentos JSON.
+		\item \textbf{Redis} \textit{(7.0.12)}: Almacenamiento en memoria, utilizado para el caché de datos.
+		\item \textbf{RubyMine} \textit{(2023.2.2)}: Entorno de desarrollo integrado especializado para el trabajo con aplicaciones en Ruby, específicamente para Ruby on Rails.
+		\item \textbf{Rake} \textit{(13.1)}: Librería de Ruby para la definición de tareas interdependientes.
+		\item \textbf{MongoDB Compass} \textit{(1.39.0)}: Visor para bases de datos de MongoDB.
+		\item \textbf{RedisInsight} \textit{(2.30.0)}: Visor para el almacenamiento del caché en Redis.
+		\item \textbf{Docker Desktop} \textit{(4.21.0)}: Visor y gestor de contenedores de Docker, en formato de aplicación de escritorio multiplataforma.
+		\item \textbf{NodeJS} \textit{(16.13.0)}: Entorno de servidor multiplataforma utilizado para la conversión de archivos en runtime.
+		\item \textbf{Yarn} \textit{(1.22.21)}: Gestor de paquetes para JavaScript.
+		\item \textbf{Docker} \textit{(24.0.2)}: Tecnología que permite crear y utilizar contenedores. Para efectos de este proyecto, es utilizado con el fin de probar el software desarrollado en distribuciones de Linux determinadas.
+		\item \textbf{Termius} \textit{(8.7.2)}: Cliente SSH.
+		\item \textbf{Git/Git Bash} \textit{(2.34.1)}: Sistema de control de versiones.
+		\item \textbf{Ubuntu LTS} \textit{(18.04.6)}: Subsistema de Linux para Windows.
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item[] \textbf{Frameworks}
+	\begin{itemize}
+		\item \textbf{Ruby on Rails} \textit{(7.1)}: Framework para desarrollo de aplicaciones web fullstack.
+		\item \textbf{Jekyll} \textit{(4.0.0)}: Framework para desarrollo de aplicaciones web estáticas escrito en Ruby.
+		\item \textbf{Bootstrap} \textit{(4.4.1)}: Framework para la creación de estilos, manejo de elementos visuales y la responsividad en aplicaciones web.
+	\end{itemize}
+\end{itemize}

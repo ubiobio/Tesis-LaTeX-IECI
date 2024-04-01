@@ -1,0 +1,163 @@
+\chapter{Análisis Funcional}
+
+\section{Actores}
+\label{analysis:actors}
+
+La especificación de todos los actores se puede encontrar a continuación en la \autoref{table:analysis:actors}.
+
+\begin{center}
+  \begin{tabular}{| p{3cm} | p{4.5cm} | p{4.5cm} | p{2cm} |}
+    \hline
+    \multicolumn{4}{|c|}{\textbf{Actores}} \\
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Actor}} & \multicolumn{1}{|c|}{\textbf{Función}} & \multicolumn{1}{|c|}{\textbf{Conocimientos}} & \multicolumn{1}{|c|}{\textbf{Privilegio}}\\
+    \hline
+    {\textbf{Administrador}} & Cumple con todas las funciones dentro de la empresa, tales como ... & ¿Requiere conocimiento sobre como funciona el sistema en su totalidad? Si no es así, ¿qué tanto? & Máximo. \\ \hline
+    {\textbf{Cliente}} & Utiliza la página sólo para visualizar la información que esta ofrece. & No requiere conocimientos técnicos más allá de iniciar sesión. & Ninguno.\\ \hline
+  \end{tabular}
+  \captionof{table}{Tabla de actores}\label{table:analysis:actors}
+\end{center}
+
+\section{Casos de Uso}
+Esta sección contiene todos los diagramas de casos de uso relevantes para el proyecto.
+
+\subsection{Diagramas de Casos de Uso}
+Imágenes de todos los casos de uso confeccionados para el proyecto.
+
+\subsection{Especificación de los Casos de Uso}
+
+\begin{center}
+  \begin{tabular}{| p{1.5cm} | p{6.5cm} | p{5.5cm} |}
+    \hline
+    \multicolumn{3}{|c|}{\textbf{Casos de Uso}} \\
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{|c|}{\textbf{Actor}} & \multicolumn{1}{|c|}{\textbf{Nombre}}\\
+    \hline
+    
+    % Módulo de Privilegios
+    {\textbf{CU\_01}} & \textbf{Administrador, Usuario} & \textbf{Iniciar Sesión}\\ \hline
+    
+    % Módulo de Autos
+    {CU\_02} & {Administrador} & {Crear Modelo X}\\ \hline
+  \end{tabular}
+  
+  \captionof{table}{Tabla de especificación de casos de uso}\label{table:usecase:specification}
+\end{center}
+
+\subsection{Detalle de los Casos de Uso}
+A continuación, se presentan tablas de detalle para los casos de uso listados en la \autoref{table:usecase:specification} que fueron marcados en negrita. Estos casos de uso también contarán con un detalle de su flujo de eventos básico.
+
+Los casos de uso seleccionados para ser detallados fueron elegidos porque cumplen funciones fundamentales de los requisitos funcionales de la aplicación desarrollada. El resto de los casos de uso solamente contarán con sus precondiciones y una descripción simple.
+
+%
+% Privilegios
+%
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_01\_INICIAR\_SESION} (Usuario)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} El usuario debe estar en la página web. El usuario debe haberse registrado en la plataforma.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Post-Condiciones:} El usuario inicia sesión en la plataforma.} \\ \hline
+    \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Básicos}} \\ \hline
+    \multicolumn{1}{|p{7.5cm}|}{\textbf{Usuarios:} Administrador, Usuario} & \multicolumn{1}{|p{7.5cm}|}{\textbf{Sistema}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{1. Renderiza la pantalla de inicio de sesión.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{2. Ingresa su correo y contraseña, y luego pulsa el botón para iniciar sesión.}& 
+    \multicolumn{1}{|p{7.5cm}|}{3. Valida la información ingresada por el usuario.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{4. Sesión iniciada. Redirecciona al usuario a la página principal.}\\ \hline
+    
+    \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Alternativo}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{\textbf{Usuarios:} Administrador, Organizador, Moderador y Jugador} & \multicolumn{1}{|p{7.5cm}|}{\textbf{Sistema}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{3 (b). Si las credenciales son incorrectas, el sistema muestra un mensaje de error.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{4 (b). Vuelve al paso 2 del flujo básico.}\\ \hline
+  \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_01\_INICIAR\_SESION}\label{table:usecase:1}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_02\_CREAR\_MODELO\_X} (Administrador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} El administrador debe haber iniciado sesión con sus credenciales.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema guarda el modelo X en la base de datos con los datos ingresados por el administrador. } \\
+    \hline
+  \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_02\_CREAR\_MODELO\_X}\label{table:usecase:3}
+\end{center}
+
+\section{Modelo de Datos}
+Modelos de la base de datos. Pueden ser esquemas de SQL, diagramas para bases de datos no relacionales, etc.
+
+\section{Esquema de la Base de Datos}
+Esquemas de definición para los modelos de la base de datos. Por ejemplo, pueden ser los modelos escritos en JSON, directamente en  en algún lenguaje de programación, etc.
+
+\section{Diseño de Interfaz}
+En esta sección se presentan imágenes de mockups o capturas de pantalla del software terminado, para así ilustrar las interfaces realizadas.
+
+\subsection{Paleta de Colores y Tipografía}
+Imágenes o descripción de la paleta de colores y tipografía utilizadas.
+
+\newpage
+
+\section{Diseño de Arquitectura}
+Describir el diseño de la arquitectura utilizada para montar el proyecto desarrollado. Por ejemplo: ''El proyecto, en su estado actual, hace uso de un servidor propio, el cual contiene los servicios web, bases de datos y caché, todo en una sola máquina ...''
+
+\section{Estructura del Código}
+El proyecto es una aplicación hecha en el framework X, por lo tanto sigue el patrón Y...
+
+Insertar alguna imagen o tabla que permita visualizar el árbol de directorios/archivos del proyecto.
+
+\subsection{Estándres de Codificación}
+
+\begin{itemize}
+  \item Toda la base de código y documentación debe estar escrita en inglés.
+  \item Se utilizan linebreaks (EOL - End of Line) CRLF.
+  \item Se utilizan dos espacios para la indentación del código, no tabulaciones.
+  \item La codificación del proyecto es en UTF-8. 
+\end{itemize}
+
+\subsection{Backend}
+La \autoref{table:backend} entrega una especificación de los directorios relevantes para el backend del proyecto.
+
+\begin{center}
+  \begin{tabular}{ | l | p{12.5cm} |}
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Directorio}} & \multicolumn{1}{|c|}{\textbf{Detalle}} \\
+    \hline
+    
+    {\textbf{controllers}} & Contiene todos los controladores ... \\ \hline
+    
+    {\textbf{models}} & Contiene todas las clases que modelan y envuelven los datos almacenados en la base de datos de la aplicación ... \\ \hline
+  \end{tabular}
+  
+  \captionof{table}{Tabla de directorios del backend del proyecto}\label{table:backend}
+\end{center}
+
+\subsection{Frontend}
+La \autoref{table:frontend} entrega una especificación de los directorios relevantes para el frontend del proyecto.
+
+\begin{center}
+  \begin{tabular}{ | l | p{12.5cm} |}
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Directorio}} & \multicolumn{1}{|c|}{\textbf{Detalle}} \\
+    \hline
+    
+    {\textbf{views}} & Contiene todas las vistas de la aplicación ... \\ \hline
+    
+    {\textbf{assets}} & Todas las imágenes, hojas de estilo ... \\ \hline
+  \end{tabular}
+  
+  \captionof{table}{Tabla de directorios del frontend del proyecto}\label{table:frontend}
+\end{center}

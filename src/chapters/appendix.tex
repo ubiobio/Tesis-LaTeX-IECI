@@ -1,0 +1,115 @@
+\chapter{Anexos}
+En este capítulo se listan elementos relacionados directamente con la confección del presente informe y con el desarrollo del software que se ha realizado.
+
+\newpage
+
+\section{Anexo Estimación de Casos de Uso}
+En esta sección se evalúan los factores de complejidad técnica y ambiental. La \autoref{table:tcf} es el detalle utilizado para obtener el ''Technical Complexity Factor'', o ''TCF'', y la \autoref{table:ef} el detalle de ''Environment Factors'', o ''EF''.
+
+\begin{center}
+  \begin{tabular}{ | p{4cm} | p{2cm} | p{4cm}| p{4cm} | } 
+    \hline
+    \multicolumn{4}{|c|}{\textbf{Technical Complexity Factor (TCF)}} \\
+    \hline
+    \multicolumn{1}{|p{3cm}|}{\textbf{Technical Factor}} & \multicolumn{1}{|c|}{\textbf{Multiplier}} & \multicolumn{1}{|c|}{\textbf{Relevancia Percibida}} & \multicolumn{1}{|c|}{\textbf{Resultado Multip.}} \\
+    \hline
+    
+    {\textbf{Distributed System}} & 2 & 2 & 4 \\ \hline
+    {\textbf{Application performance objectives, in either response or throughput}} & 1 & 2 & 2 \\ \hline
+    {\textbf{End-user efficiency (on-line)}} & 1 & 3 & 3 \\ \hline
+    {\textbf{Complex internal processing}} & 1 & 3 & 3 \\ \hline
+    {\textbf{Reusability, the code must be able to reuse in other applications}} & 1 & 3 & 3 \\ \hline
+    {\textbf{Installation ease}} & 0,5 & 1 & 0,5 \\ \hline
+    {\textbf{Operational ease, usability}} & 0,5 & 2 & 1 \\ \hline
+    {\textbf{Portability}} & 2 & 3 & 6 \\ \hline
+    {\textbf{Changeability}} & 1 & 3 & 3 \\ \hline
+    {\textbf{Concurrency}} & 1 & 2 & 2 \\ \hline
+    {\textbf{Special security features}} & 1 & 3 & 3 \\ \hline
+    {\textbf{Provide direct access for third parties}} & 1 & 0 & 0 \\ \hline
+    {\textbf{Special user training facilities}} & 1,5 & 4 & 6 \\ \hline
+  \end{tabular}
+  
+  \captionof{table}{Tabla de complejidad técnica}\label{table:tcf}
+\end{center}
+
+Se obtiene entonces que el total es 34, con lo que sustituyendo en la fórmula del TCF, quedaría:
+\[
+\text{TCF} = 0.6+(0.01\cdot34)
+\]
+
+\[
+TCF = 0.94
+\]
+
+\begin{center}
+  \begin{tabular}{ | p{4cm} | p{2cm} | p{4cm}| p{4cm} | } 
+    \hline
+    \multicolumn{4}{|c|}{\textbf{Environment Factors (EF)}} \\
+    \hline
+    \multicolumn{1}{|p{3cm}|}{\textbf{Environmental Factor}} & \multicolumn{1}{|c|}{\textbf{Multiplier}} & \multicolumn{1}{|c|}{\textbf{Relevancia Percibida}} & \multicolumn{1}{|c|}{\textbf{Resultado Multip.}} \\
+    \hline
+    
+    {\textbf{Familiar with Iterative Methods}} & 0,5 & 5 & 2,5 \\ \hline
+    {\textbf{Application experience}} & 1 & 5 & 5 \\ \hline
+    {\textbf{Object Oriented experience}} & 0,5 & 5 & 2,5 \\ \hline
+    {\textbf{Analyst capability}} & 1 & 5 & 5 \\ \hline
+    {\textbf{Motivation}} & 2 & 5 & 10 \\ \hline
+    {\textbf{Stable requirements}} & -1 & 0 & 0 \\ \hline
+    {\textbf{Difficult programming language}} & -1 & 3 & -3 \\ \hline
+  \end{tabular}
+  
+    \captionof{table}{Tabla de factores medioambientales}\label{table:ef}
+\end{center}
+
+\section{Anexos de Recopilación de Información}
+...
+
+\section{Anexo Aspectos de Gestión de Proyectos}
+...
+
+\newpage
+
+\subsection{Anexo Resumen de Esfuerzo}
+\begin{center}
+  \begin{tabular}{ | p{10cm} | p{5cm} |}
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Actividad}} & \multicolumn{1}{|c|}{\textbf{Número de Horas}} \\
+    \hline
+    
+    {Preparación del proyecto} & {20} \\ \hline
+    {Desarrollo del módulo de autos} & {50} \\ \hline
+    {Desarrollo del módulo de pistas} & {50} \\ \hline
+    {Desarrollo del módulo de sesiones} & {80} \\ \hline
+    {Desarrollo del módulo de temporadas} & {80} \\ \hline
+    {Corrección de errores de código} & {40} \\ \hline
+    {Despliegue de la aplicación} & {27} \\ \hline
+    {Control de versiones} & {37} \\ \hline
+    
+    {\textbf{Total}} & {\textbf{384}} \\
+
+    \hline
+  \end{tabular}
+  
+    \captionof{table}{Tabla de resumen de esfuerzo}\label{table:effort}
+\end{center}
+
+\newpage
+
+\section{Anexos Retrospectiva del Proyecto}
+
+\subsection{Anexo Iteraciones en el Desarrollo}
+
+\begin{center}
+  \begin{tabular}{ | p{6cm} | p{3cm} | p {6cm} |}
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Funcionalidad}} & \multicolumn{1}{|c|}{\textbf{Fecha}} &
+    \multicolumn{1}{|c|}{\textbf{Retroalimentación}} \\
+    \hline
+    
+    {Módulo X (1)} & {12/11/2023} & {Añadir visualización para todos y uno sólo ...}\\
+    {Módulo X (2)} & {12/11/2023} & {Agregar a la navegación ...}\\
+    {Módulo X (3)} & {21/11/2023} & {Corregir problemas internos del módulo X}\\ \hline
+  \end{tabular}
+  
+   \captionof{table}{Tabla de iteraciones en el desarrollo}\label{table:iterations}
+\end{center}

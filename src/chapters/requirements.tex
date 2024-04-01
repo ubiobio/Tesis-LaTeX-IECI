@@ -1,0 +1,112 @@
+\chapter{Requerimientos del Software}
+
+\section{Límites}
+
+\begin{itemize}
+	\item El software no permitirá...
+\end{itemize}
+
+\section{Caracterización de los Usuarios}
+Describir a quienes apunta este proyecto. Se caracterizan por:
+
+\begin{itemize}
+	\item Pertenencia a un grupo etario entre...
+	\item ¿Competencias técnicas en uso de software similares?
+	\item Familiaridad con...
+\end{itemize}
+
+\section{Objetivo General del Software}
+Describir el objetivo general del software.
+
+\subsection{Objetivos Específicos del Software}
+\begin{itemize}
+	\item Objetivo específico
+	\item Objetivo específico
+	\item Objetivo específico
+\end{itemize}
+
+\section{Requerimientos Funcionales del Software}
+A continuación, en las tablas x a y, se definen los requerimientos funcionales del software.
+\begin{center}
+	\begin{tabular}{ | l | p{15cm} |}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Módulo de Ejemplo}} \\
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{|c|}{\textbf{Descripción}} \\
+		\hline
+		{\textbf{RF\_01}} & La plataforma contará con un módulo de creación... \\ \hline
+
+		{\textbf{RF\_02}} & La plataforma contará con un módulo de visualización... \\ \hline
+
+		{\textbf{RF\_03}} & La plataforma contará con un módulo de edición de un... \\ \hline
+		
+		{\textbf{RF\_04}} & La plataforma contará con un módulo de eliminación de un... \\ \hline
+		
+		{\textbf{RF\_05}} & La plataforma contará con un módulo de visualización de un... \\ \hline
+	\end{tabular}
+  
+  \captionof{table}{Tabla de requerimientos funcionales del módulo de ejemplo}\label{table:rf:ejemplo}
+\end{center}
+
+\section{Requerimientos No Funcionales del Software}
+La presente sección hablará de los requerimientos no funcionales del software desarrollado. Todos los requerimientos no funcionales se relacionarán con uno o más atributos. Si un atributo aplica a un requerimiento no funcional, eso quiere decir que el requerimiento contribuye a la calidad del software desarrollado a través de ese atributo. Todos los atributos listados están basados en la norma ISO 25010. A continuación, se presentan los requerimientos no funcionales en las tablas x a y.
+
+% API
+\begin{center}
+  \begin{tabular}{ | p{2cm}| p{8cm} | p{5cm} |}
+    \hline
+    \multicolumn{3}{|c|}{\textbf{RNF\_01 (EJEMPLO)}} \\
+    \hline
+    
+    \multicolumn{1}{|p{2cm}|}{\textbf{Descripción}} & \multicolumn{2}{|p{13cm}|}{La plataforma contará con una API REST} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\textbf{{Atributo}}} & \multicolumn{1}{|p{1.5cm}|}{\textbf{Aplica}} & \multicolumn{1}{|p{10cm}|}{\textbf{Especificación}} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Adecuación Funcional}} & \multicolumn{1}{|c|}{X} & \multicolumn{1}{|p{10cm}|}{La API contribuye a la corrección funcional, ya que facilita la obtención de datos precisos del sistema a terceros.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Eficiencia de Desempeño}} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|p{10cm}|}{} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Compatibilidad}} & \multicolumn{1}{|c|}{X} & \multicolumn{1}{|p{10cm}|}{La API contribuye a la coexistencia con otras piezas de software independientes, ya que permite a dicho software consumir información del sistema en tiempo real.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Usabilidad}} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|p{10cm}|}{} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Fiabilidad}} & \multicolumn{1}{|c|}{X} & \multicolumn{1}{|p{10cm}|}{La API contribuye a la madurez del software, ya que es gracias a ella que el sistema puede satisfacer las necesidades de los usuarios que consumen información del mismo.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Seguridad}} & \multicolumn{1}{|c|}{X} & \multicolumn{1}{|p{10cm}|}{Gracias al diseño de la API, sólo se exponen endpoints de lectura, por lo que esta contribuye a la confidencialidad e integridad de la información.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Mantenibilidad}} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|p{10cm}|}{} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Portabilidad}} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|p{10cm}|}{} \\
+
+    \hline
+  \end{tabular}
+
+  \captionof{table}{Tabla de requerimiento no funcional de API}\label{table:rnf:api}
+\end{center}
+
+\section{Interfaces Internas de Salida}
+
+\begin{center}
+	\begin{tabular}{ | c | p{3.5cm} | p{10cm} |}
+		\hline
+		\textbf{Id} & {\textbf{Nombre}} & {\textbf{Detalle de Datos}} \\ \hline
+		{\textbf{IN\_01}} & Modelo X & field\_1, field\_2, field\_3 \\ \hline
+		{\textbf{IN\_02}} & Modelo Y &  field\_1, field\_2, field\_3 \\ \hline
+	\end{tabular}
+
+    \captionof{table}{Tabla de interfaces internas de salida}\label{table:interfaces:in}
+\end{center}
+
+\section{Interfaces Externas de Salida}
+
+\begin{center}
+	\begin{tabular}{ | c | p{2cm} | p{6.5cm} | p{4cm} |}
+		\hline
+		{\textbf{Id}} & 	{\textbf{Nombre}} & {\textbf{Detalle de Datos}} & {\textbf{Medio de Salida}} \\
+		\hline
+		{\textbf{OUT\_01}} & Modelo X & field\_1, field\_2, field\_3 & Pantalla \\ \hline
+		{\textbf{OUT\_02}} & Modelo Y & field\_1, field\_2, field\_3 & Archivo PDF \\ \hline
+	\end{tabular}
+  
+  \captionof{table}{Tabla de interfaces externas internas de salida}\label{table:interfaces:out}
+\end{center}
