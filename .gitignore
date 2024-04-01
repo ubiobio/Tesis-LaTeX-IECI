@@ -296,3 +296,13 @@ TSWLatexianTemp*
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
+
+# Mac OSX generated files
+.DS_Store
+
+# JetBrains
+.idea
+
+# Vim generated files
+*~
+*.swp
